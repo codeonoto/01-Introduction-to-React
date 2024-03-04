@@ -24,18 +24,33 @@
 //   </>
 // );
 
-function App() {
-  return (
-    <>
-      <h1>About React</h1>
-      <p>There are some features of React</p>
-      <ul>
-        <li>React is Compasable.</li>
-        <li>React have better Code Reusability.</li>
-        <li>React is Declareative.</li>
-      </ul>
-    </>
-  );
+// function App() {
+//   return (
+//     <>
+//       <h1>About React</h1>
+//       <p>There are some features of React</p>
+//       <ul>
+//         <li>React is Compasable.</li>
+//         <li>React have better Code Reusability.</li>
+//         <li>React is Declareative.</li>
+//       </ul>
+//     </>
+//   );
+// }
+function Name() {
+  return <p>JSX is Javascript XML</p>;
 }
+const App = () => (
+  <>
+    <Name />
+    <h1>About React</h1>
+    <p>There are some features of React</p>
+    <ul>
+      <li>React is Compasable.</li>
+      <li>React have better Code Reusability.</li>
+      <li>React is Declareative.</li>
+    </ul>
+  </>
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
